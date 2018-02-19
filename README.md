@@ -1,19 +1,12 @@
 # Basket Bear
 
-> An open source web application that provides the lowest prices for products from Amazon and Ebay. Users can can easily search for products and add them to a watch list to receive notifications for price drops and set a target price to wait for. A service worker checks prices regularly and updates the user’s watch list.
+An open source web application that provides the lowest prices for products from Amazon and Ebay. Users can can easily search for products and add them to a watch list to receive notifications for price drops and set a target price to wait for. A service worker checks prices regularly and updates the user’s watch list.
 
 The application also provides a public REST API for using the search engine and for retrieving requested price information for products and other marketing data like most popular products. Merchants, businesses, and developers can sign up for free access to our API through the Developers page and learn how to use it by reading our documentation.
 
-
-## Team
-
-  - __Product Owner__: Jason
-  - __Scrum Master__: Diana
-  - __Git Workflow__: Nick
-  - __Software Engineering__: Candice, Jason, Diana, Nick
-
 ## Table of Contents
 
+1. [Team](#Team)
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
@@ -21,8 +14,15 @@ The application also provides a public REST API for using the search engine and 
     1. [NPM Scripts](#npm-scripts)
     1. [Docker](#docker)
     1. [Environment](#environment)
-1. [Team](#team)
 1. [Contributing](#contributing)
+1. [Public API](#public-api)
+
+## Team
+
+  - __Product Owner__: Jason
+  - __Scrum Master__: Diana
+  - __Git Workflow__: Nick
+  - __Software Engineering__: Candice, Jason, Diana, Nick
 
 ## Usage
 
@@ -69,7 +69,7 @@ Start the server with nodemon and webpack-dev-middleware:
 npm run server
 ```
 
-Start the server with nodemon, webpack-dev middleware,-and webpack-hot-middleware:
+Start the server with nodemon, webpack-dev-middleware, and webpack-hot-middleware:
 ```sh
 npm run hot
 ```
@@ -83,7 +83,7 @@ Launch a local docker container and run all test suites inside:
 npm run prod-test
 ```
 
-Launch a local docker container and start the server with nodemon, webpack-dev middleware,-and webpack-hot-middleware:
+Launch a local docker container and start the server with nodemon, webpack-dev middleware, and webpack-hot-middleware:
 ```sh
 npm run container
 ```
@@ -107,8 +107,10 @@ create a hidden file called .env in the root of the project that contains values
 environment variables are not necessary to run tests
 The .env file is ignored by git
 
-```
-
 ## Contributing
 
 See [CONTRIBUTING.md](_CONTRIBUTING.md) for contribution guidelines.
+
+## Public API
+see our [Developers Page](https://www.basketbear.com/dev) for instructions opn how to sign up and access the Basket Bear Web API
+
